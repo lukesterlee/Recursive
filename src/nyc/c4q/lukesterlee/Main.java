@@ -7,10 +7,11 @@ public class Main {
             return true;
         char first = word.charAt(0);
         word = word.substring(1);
-        if (word.contains(first + ""))
+        if (word.contains(first + "")) // explain the + "" (I get it, but its useful to be clear with stuff like that)
             return isEvenWord(word.replaceFirst(first + "", ""));
         return false;
     }
+// this is perfect, I love how short it is and how many test cases you have
 
     public static void main(String[] args) {
 	// write your code here
